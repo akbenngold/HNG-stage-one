@@ -6,7 +6,6 @@ let timeOfDay = document.getElementById("time")
 //create date and time
 function updateClock() {
     var e = new Date();
-    var d = e.getUTCDate();
     var hours = d.getHours();
     var minutes = d.getMinutes();
     var seconds = d.getSeconds();
@@ -16,7 +15,6 @@ function updateClock() {
 }
 setInterval(updateClock, 10);
 var e = new Date();
-var d = e.getUTCDate();
 var day = d.getDay();
 
 switch (day) {
