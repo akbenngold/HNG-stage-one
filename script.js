@@ -5,7 +5,7 @@ let timeOfDay = document.getElementById("time")
 
 //create date and time
 function updateClock() {
-    var e = new Date();
+    var d = new Date();
     var hours = d.getHours();
     var minutes = d.getMinutes();
     var seconds = d.getSeconds();
@@ -14,7 +14,7 @@ function updateClock() {
     timeOfDay.innerHTML = time;
 }
 setInterval(updateClock, 10);
-var e = new Date();
+var d = new Date();
 var day = d.getDay();
 
 switch (day) {
