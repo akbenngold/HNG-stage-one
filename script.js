@@ -15,7 +15,7 @@ function updateClock() {
 }
 setInterval(updateClock, 10);
 var d = new Date();
-var day = d.getDay();
+var day = d.getUTCDay();
 
 switch (day) {
     case 0:
