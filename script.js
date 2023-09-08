@@ -6,7 +6,7 @@ let timeOfDay = document.getElementById("time")
 //create date and time
 function updateClock() {
     var d = new Date();
-    var e = d.getUTCDate();
+    var e = d.toUTCString();
     timeOfDay.innerHTML = e;
 }
 setInterval(updateClock, 10);
