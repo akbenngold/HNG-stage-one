@@ -5,7 +5,7 @@ let timeOfDay = document.getElementById("time")
 
 //create date and time
 function updateClock() {
-    var d = new Date();
+    var d = new Date().getTime();
     timeOfDay.innerHTML = d;
 }
 setInterval(updateClock, 10);
